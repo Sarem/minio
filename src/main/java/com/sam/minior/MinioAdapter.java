@@ -1,4 +1,4 @@
-package com.sam.minio;
+package com.sam.minior;
 import io.minio.MinioClient;
 import io.minio.messages.Bucket;
 import org.apache.commons.io.IOUtils;

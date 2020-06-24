@@ -10,9 +10,9 @@
 	</parent>
 
 	<groupId>com.sam</groupId>
-	<artifactId>minio</artifactId>
+	<artifactId>minior</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>minio</name>
+	<name>minior</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>

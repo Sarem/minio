@@ -1,4 +1,4 @@
-package com.sam.minio;
+package com.sam.minior;
 import io.minio.messages.Bucket;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.ByteArrayResource;

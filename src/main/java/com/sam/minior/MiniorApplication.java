@@ -1,13 +1,13 @@
-package com.sam.minio;
+package com.sam.minior;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class MinioApplication {
+public class MiniorApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(MinioApplication.class, args);
+		SpringApplication.run(MiniorApplication.class, args);
 	}
 
 }
