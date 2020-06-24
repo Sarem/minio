@@ -1,23 +1,15 @@
 version: "2.1"
 services:
-  minio:
-    image: minio/minio
-    container_name: minio
-#    command: --default-authentication-plugin=mysql_native_password
-#    restart: always
-    ports:
-      - 9001:9000
-    expose:
-      - "9001"
+#  minio:
+#    image: minio/minio
+#    hostname: minio1
+#    ports:
+#      - 9001:9000
+#    expose:
+#      - "9001"
 #    environment:
-#      MYSQL_ROOT_PASSWORD: rootpsw
-#      MYSQL_DATABASE: knimer
-#      MYSQL_USER: knimer
-#      MYSQL_PASSWORD: knimerpsw
-#    healthcheck:
-#      test: ["CMD", "mysqladmin" ,"ping", "-h", "localhost"]
-#      timeout: 20s
-#      retries: 10
+#      MINIO_ACCESS_KEY: ACCESS_KEY
+#      MINIO_SECRET_KEY: SECRET_KEY
   minior:
     build: .
     restart: on-failure
@@ -25,11 +17,7 @@ services:
       - 8001:8001
     expose:
       - "8081"
-#    links:
-#      - "db:database"
-#    depends_on:
-#      db:
-#        condition: service_healthy
+
 
 
 
