@@ -1,14 +1,14 @@
 version: "2.1"
 services:
-#  db:
-#    image: mysql:8.0.19
-#    container_name: db
+  minio:
+    image: minio/minio
+    container_name: minio
 #    command: --default-authentication-plugin=mysql_native_password
 #    restart: always
-#    ports:
-#      - 3306:3306
-#    expose:
-#      - "3306"
+    ports:
+      - 9001:9000
+    expose:
+      - "9001"
 #    environment:
 #      MYSQL_ROOT_PASSWORD: rootpsw
 #      MYSQL_DATABASE: knimer
