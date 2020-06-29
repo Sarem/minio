@@ -1,0 +1,23 @@
+minio:
+  buckek:
+    name: test
+  default:
+    folder: /
+  access:
+    name: ACCESS_KEY
+    secret: SECRET_KEY
+  url: http://127.0.0.1:9001
+server:
+  port: 8001
+spring:
+  kafka:
+    consumer:
+      bootstrap-servers: localhost:9092
+      group-id: group-id
+      auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+    producer:
+      bootstrap-servers: localhost:9092
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
